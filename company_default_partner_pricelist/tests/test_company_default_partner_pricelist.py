@@ -41,3 +41,36 @@ class TestCompanyDefaultPartnerPricelist(common.TransactionCase):
         # set by the user
         self.partner.property_product_pricelist = self.pricelist_1
         self.assertEqual(self.partner.property_product_pricelist, self.pricelist_1)
+
+    def test_company_pricelist_create(self):
+        self.env["ir.property"].sudo().search(
+            [("name", "=", "property_product_pricelist")]
+        ).unlink()
+        company = self.env["res.company"].create(
+            [
+                {
+                    "name": "Test Company",
+                    "default_property_product_pricelist_id": self.base_pricelist.id,
+                }
+            ]
+        )
+        properties = (
+            self.env["ir.property"]
+            .sudo()
+            .search(
+                [
+                    ("company_id", "=", company.id),
+                    (
+                        "value_reference",
+                        "=",
+                        "product.pricelist,%s" % self.base_pricelist.id,
+                    ),
+                ]
+            )
+        )
+        self.assertEqual(len(properties), 1, "Properties count must be equal to 1")
+        self.assertEqual(
+            properties[0].name,
+            "property_product_pricelist",
+            "Properties name must be equal to 'property_product_pricelist'",
+        )
