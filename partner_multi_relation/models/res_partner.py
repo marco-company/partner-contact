@@ -178,7 +178,7 @@ class ResPartner(models.Model):
 
     @api.constrains("is_company")
     def _check_relation_compatibility(self):
-        """If is_company changes, check relations wether this should be allowed."""
+        """If is_company changes, check relations whether this should be allowed."""
         Relation = self.env["res.partner.relation"]
         for this in self:
             contact_type = this.get_partner_type()
