@@ -162,11 +162,9 @@ class ResPartnerRelation(models.Model):
                 raise ValidationError(
                     _(
                         "%(left_partner)s already has a %(connection_type)s"
-                        " relation with %(right_partner)s with overlapping dates"
+                        " relation with %(right_partner)s with overlapping dates",
+                        left_partner=record_name(record.left_partner_id),
+                        connection_type=record.type_id.display_name,
+                        right_partner=record_name(record.right_partner_id),
                     )
-                    % {
-                        "left_partner": record_name(record.left_partner_id),
-                        "connection_type": record.type_id.display_name,
-                        "right_partner": record_name(record.right_partner_id),
-                    }
                 )
