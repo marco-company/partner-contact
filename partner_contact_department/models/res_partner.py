@@ -13,10 +13,14 @@ class ResPartner(models.Model):
 
 class ResPartnerDepartment(models.Model):
     _name = "res.partner.department"
-    _order = "display_name"
+    _order = "sequence, display_name"
     _parent_store = True
     _description = "Department"
 
+    active = fields.Boolean(default=True)
+    sequence = fields.Integer(
+        required=True, default=10, help="Used to order departments."
+    )
     name = fields.Char(required=True, translate=True)
     display_name = fields.Char(
         compute="_compute_display_name",
@@ -47,7 +51,7 @@ class ResPartnerDepartment(models.Model):
     def name_get(self):
         """Prepend parent name to department name."""
         result = super().name_get()
-        for position, ((id_, name), rec) in enumerate(zip(result, self, strict=True)):
+        for position, ((id_, name), rec) in enumerate(zip(result, self)):
             while rec.parent_id.name:
                 name = f"{rec.parent_id.name} / {name}"
                 rec = rec.parent_id
