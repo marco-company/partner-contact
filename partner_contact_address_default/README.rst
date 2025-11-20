@@ -36,6 +36,13 @@ default delivery and invoice address and a default contact for contacts.
 .. contents::
    :local:
 
+Configuration
+=============
+
+#. Go to Settings.
+#. Under Contact Category, enable Contact Address Default Allow All Partners to allow selecting any partner,
+   instead of being limited to child contacts.
+
 Usage
 =====
 
@@ -79,6 +86,10 @@ Contributors
 * `ForgeFlow <https://www.forgeflow.com>`_:
 
   * Laura Cazorla
+
+* `Quartile <https://www.quartile.co>`_:
+
+  * Aung Ko Ko Lin
 
 Maintainers
 ~~~~~~~~~~~
