@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-09 14:27+0000\n"
-"PO-Revision-Date: 2025-09-09 14:27+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,17 +14,17 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: partner_quality_log
-#: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__attencion_quality
-#: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__attencion_quality
-#: model:ir.model.fields,field_description:partner_quality_log.field_res_users__attencion_quality
+#: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__attention_quality
+#: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__attention_quality
+#: model:ir.model.fields,field_description:partner_quality_log.field_res_users__attention_quality
 msgid "Attention given"
 msgstr ""
 
 #. module: partner_quality_log
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attencion_quality__1_bad
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__1_bad
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__price_quality__1_bad
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__service_quality__1_bad
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attencion_quality__1_bad
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attention_quality__1_bad
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__1_bad
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__1_bad
 msgid "Bad"
@@ -53,10 +51,10 @@ msgid "Display Name"
 msgstr ""
 
 #. module: partner_quality_log
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attencion_quality__3_good
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__3_good
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__price_quality__3_good
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__service_quality__3_good
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attencion_quality__3_good
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attention_quality__3_good
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__3_good
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__3_good
 msgid "Good"
@@ -99,13 +97,9 @@ msgstr ""
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__partner_quality
-msgid "Partner Quality"
-msgstr ""
-
-#. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__partner_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__partner_quality
-msgid "Partner quality"
+msgid "Partner Quality"
 msgstr ""
 
 #. module: partner_quality_log
@@ -130,6 +124,8 @@ msgstr ""
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__qualification_date
+#: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__qualification_date
+#: model:ir.model.fields,field_description:partner_quality_log.field_res_users__qualification_date
 msgid "Qualification Date"
 msgstr ""
 
@@ -140,8 +136,6 @@ msgid "Qualification Log"
 msgstr ""
 
 #. module: partner_quality_log
-#: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__qualification_date
-#: model:ir.model.fields,field_description:partner_quality_log.field_res_users__qualification_date
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.view_res_partner_filter
 msgid "Qualification date"
 msgstr ""
@@ -157,10 +151,10 @@ msgid "Quality Partner Log"
 msgstr ""
 
 #. module: partner_quality_log
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attencion_quality__2_regular
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__2_regular
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__price_quality__2_regular
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__service_quality__2_regular
-#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attencion_quality__2_regular
+#: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__attention_quality__2_regular
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__2_regular
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__2_regular
 msgid "Regular"
