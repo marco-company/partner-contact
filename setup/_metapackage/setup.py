@@ -15,6 +15,7 @@ setuptools.setup(
         'odoo-addon-base_location_geonames_import>=16.0dev,<16.1dev',
         'odoo-addon-base_location_nuts>=16.0dev,<16.1dev',
         'odoo-addon-base_partner_company_group>=16.0dev,<16.1dev',
+        'odoo-addon-base_partner_merge_user_consolidation>=16.0dev,<16.1dev',
         'odoo-addon-base_partner_sequence>=16.0dev,<16.1dev',
         'odoo-addon-company_default_partner_pricelist>=16.0dev,<16.1dev',
         'odoo-addon-crm_partner_company_group>=16.0dev,<16.1dev',
